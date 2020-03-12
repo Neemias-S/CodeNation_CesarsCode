@@ -34,7 +34,7 @@ import reactor.core.publisher.Flux;
 public class Decrypter {
 
 	static final String alphabet = "abcdefghijklmnopqrstuvxwyz";
-	File answer = new File("C:\\Users\\neemi\\Documents\\workspace-sts-3.9.9.RELEASE\\CesarsDecoder\\target\\files\\answer.json");
+	File answer = new File("C:\\Users\\neemi\\Documents\\workspace-sts-3.9.9.RELEASE\\CesarsDecoder\\answer.json");
 	static Gson gson = new Gson();
 
 	@GetMapping
@@ -141,7 +141,7 @@ public class Decrypter {
 	public Flux<String> submitAnswer() throws MalformedURLException {
 	    
 		final UrlResource resource = new UrlResource(
-				"file:///C:\\Users\\neemi\\Documents\\workspace-sts-3.9.9.RELEASE\\CesarsDecoder\\target\\files\\answer.json");
+				"file:///C:\\\\Users\\\\neemi\\\\Documents\\\\workspace-sts-3.9.9.RELEASE\\\\CesarsDecoder\\\\answer.json");
 
 	    MultiValueMap<String, UrlResource> data = new LinkedMultiValueMap<>();
 	    data.add("answer", resource);
