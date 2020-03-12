@@ -138,10 +138,11 @@ public class Decrypter {
 	
 	}
 	
+	//Not working
 	public Flux<String> submitAnswer() throws MalformedURLException {
 	    
 		final UrlResource resource = new UrlResource(
-				"file:///C:\\\\Users\\\\neemi\\\\Documents\\\\workspace-sts-3.9.9.RELEASE\\\\CesarsDecoder\\\\answer.json");
+				"file:///C:\\Users\\neemi\\Documents\\workspace-sts-3.9.9.RELEASE\\CesarsDecoder\\answer.json");
 
 	    MultiValueMap<String, UrlResource> data = new LinkedMultiValueMap<>();
 	    data.add("answer", resource);
@@ -155,5 +156,12 @@ public class Decrypter {
 	            .flux();
 	}
 	
+	public void submitsAnswerteste() {
+		
+//		RestClient client = new RestClient("url");
+//		RestRequest requests = new RestRequest(HttpMethod.POST);
+//		requests.AddHeader("Content-Type", "multipart/form-data;");
+//		requests.AddFile("answer", "path");
+	}
 	
 }
